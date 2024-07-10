@@ -1,9 +1,12 @@
 
 
 Learning Outcomes:
-1. File I/O for CSV, PDF.
-2. Store data into a sql lite db
-3. Create a simple GUI to run the process
+- learn how to manupulate strings,
+- learn re and pattern matching
+- find in text, find in list
+- File I/O for CSV, PDF (I have learned that PDFs are evil.)
+- learn to work with dates.
+- take different formats and harmonize them and compile data into a single csv.
 
 
 Setup:
@@ -15,5 +18,4 @@ Command Line:
 py -3.12 -m venv .venv      
 (--system-site-packages if need access)
 .\.venv\Scripts\Activate.ps1
-pip install requirments.txt
-py -3.12 eldenbot.py 
+pip install -r requirements.txt
