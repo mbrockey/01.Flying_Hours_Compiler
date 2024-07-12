@@ -154,6 +154,7 @@ def main():
                     
 
                     compiled_data[33].append(home_unit_decode[3])
+                    compiled_data[34].append(source_decode[3])
                     
 
                 
@@ -245,6 +246,7 @@ def main():
                 compiled_data[i].append(0)
             #33
             compiled_data[33].append(home_unit_decode[description_phase])
+            compiled_data[34].append(source_decode[description_phase])
 
             #increment and check for end of page
             skip_line_list = ["F37AT11","SMT001","CST006"]
@@ -473,6 +475,13 @@ home_unit_decode = {
     4  : "71 FTW, 8 FTS and 71 STUS, VANCE AFB - Instructor Pilot",
 }
 
+source_decode = {
+    1: "01. 05DEC19 - 06JUL20 UPT T-6A Aviation Training Jacket Report.pdf || 04. Avtivity Log MAY19 - JUN24.pdf || 05. AF 3520 Brockey Flight and Device Data.pdf",
+    2: "02. 06JUL20 - 04FEB21 UPT T-38C Aviation Training Jacket Report.pdf || 04. Avtivity Log MAY19 - JUN24.pdf || 05. AF 3520 Brockey Flight and Device Data.pdf",
+    3: "03. 19FEB21 - 21JUN21 PIT T-6A Aviation Training Jacket Report.pdf",
+    4: "04. Avtivity Log MAY19 - JUN24.pdf || 05. AF 3520 Brockey Flight and Device Data.pdf",
+}   
+
 activity_decode = {
     "ILS normal" : 1,
     "VOR approach" : 2,
@@ -585,7 +594,8 @@ column_name_data = {
     30 : "Circling Approach",
     31 : "Formation Approach",
     32 : "Four Ship Flight Lead",
-    33 : "Description"
+    33 : "Description",
+    34 : "Source"
     
 
 }
